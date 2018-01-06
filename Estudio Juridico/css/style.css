@@ -1,0 +1,299 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.texto-titulo {
+  padding-top: 6%;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.boton{
+  height:38px;
+  background:#022F54;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.caja-extra{
+  padding:15px;
+  background:#097EE0;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#022F54;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#FFFFFF 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca-corporativa{
+  float:left;
+}
+
+header #marca-corporativa h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .logo, header .navegador a{
+  color:#56ADF5;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#ccc;
+}
+
+/* portada */
+#portada{
+  min-height:600px;
+  background:url('../img/fondo.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#portada h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+
+}
+
+#portada p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#56ADF5;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Cajas */
+#cajas{
+  margin-top:20px;
+}
+
+#cajas .caja{
+  float:left;
+  text-align: center;
+  width:300px;
+  padding:10px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 4px;
+  border: #f0f0f1 solid 1px;
+}
+
+#cajas .caja img{
+  width:300px;
+}
+
+/* Sidebar */
+  aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Datos */
+ul#datos li{
+  list-style: none;
+  padding:20px;
+  border: #f0f0f1 solid 1px;
+  margin-bottom:10px;
+  background:white;
+  border-radius: 5px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#1A1D30;
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f95344;
+  color: white;
+}
+
+.titulo {
+  font-size: 25px;
+  background:#56ADF5;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.remarcado {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.especial {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #aa9be8;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.container h3 {
+  margin-bottom: 0px;
+}
+
+.parrafo {
+  margin-top: 3px;
+}
+
+h4 {
+  font-size: 19px;
+  color: #3e3d3d;
+}
+
+/* Media Queries */
+@media(max-width: 930px){
+  header #marca-corporativa,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #cajas .caja,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  .texto-titulo {
+    padding-top: 18%;
+  }
+  header{
+    padding-bottom:20px;
+  }
+
+  #portada h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+
+  #cajas .caja{
+    float:left;
+    text-align: center;
+    width:300px;
+    padding:10px;
+    margin-left: 30%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px){ /*cuando el tamaño se 600px o menos*/
+  #cajas .caja{
+    float:left;
+    text-align: center;
+    width:300px;
+    padding:10px;
+    margin-left: 13%;
+  }
+}

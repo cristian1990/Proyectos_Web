@@ -1,0 +1,196 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+header{
+  background:#f3d333;
+  color:black;
+  padding-top:0px;
+  min-height:70px;
+}
+
+header a{
+  color:black;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca-corporativa{
+  float:left;
+  margin: 16px;
+}
+
+header nav{
+  float:right;
+  margin-top:20px;
+}
+
+header .logo, header .navegador a{
+  color:#f7eaf4;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:gray;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+  opacity:1;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.pimg4{
+  background-image:url('../img/image4.jpg');
+  min-height:100%;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.seccion-clara{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.seccion-oscura{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptexto{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptexto .marco{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptexto .marco.trans{
+  background-color:transparent;
+}
+
+footer{
+  padding:20px;
+  color:#ffffff;
+  background-color:#040404;
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f95344;
+  color: white;
+}
+
+.logobs {
+    margin-top: -11%;
+}
+
+/* Media Queries */
+@media(max-width: 800px){
+  header #marca-corporativa,
+  header nav,
+  header nav li,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header {
+      padding-bottom:5px;
+  }
+
+  .logobs {
+      width: 450px;
+  }
+
+  header #marca-corporativa{
+    float:center;
+    margin-top: 0px;
+    padding-top: 15px;
+  }
+}
+
+  .navegador2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+}
